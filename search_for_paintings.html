@@ -35,10 +35,27 @@
             </div>
 
             <div id="advanced-form">
-                <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Author</label>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect02">Field</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="image">Image</option>
+                        <option value="description">Description</option>
+                        <option value="video">Video</option>
+                        <option value="author">Author</option>
+                        <option value="birth_death_date">Birth/Death date</option>
+                        <option value="creation_date">Creation date</option>
+                        <option value="provenance">Provenance</option>
+
+
+                    </select>
                 </div>
+
+                <h2 class="mb-4"><strong>Filters</strong></h2>
+
+                <div class="input-group mb-3">
                 <select class="custom-select" id="inputGroupSelect01">
                     <option selected>Choose...</option>
                     <option value="Agricola Christoph Ludwig">Agricola Christoph Ludwig (2)</option>
@@ -272,263 +289,266 @@
                     <option value="Zanobi di Benedetto di Caroccio degli Stozzi">Zanobi di Benedetto di Caroccio degli Stozzi (2)</option>
                     <option value="Zoppo Marco">Zoppo Marco (1)</option>
                 </select>
+                <div class="input-group-append">
+                    <label class="input-group-text" for="inputGroupSelect01">Author</label>
+                </div>
                 </div>
 
                 <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>Choose...</option>
-                    <option value="(1741 - 1806)">(1741 - 1806) (1)</option>
-                    <option value="(Anversa, ca. 1540-Bologna, 1619)">(Anversa, ca. 1540-Bologna, 1619) (1)</option>
-                    <option value="(Anversa ca. 1540-Bologna 1619)">(Anversa ca. 1540-Bologna 1619) (1)</option>
-                    <option value="(Arezzo 1511-Firenze 1574)">(Arezzo 1511-Firenze 1574) (2)</option>
-                    <option value="(Arpino, 1567 - Roma, 1640)">(Arpino, 1567 - Roma, 1640) (1)</option>
-                    <option value="(attivo a Bologna nella prima metà del XIV secolo)">(attivo a Bologna nella prima met&agrave; del XIV secolo) (2)</option>
-                    <option value="(attivo a Bologna nella seconda metà del XV secolo)">(attivo a Bologna nella seconda met&agrave; del XV secolo) (1)</option>
-                    <option value="(attivo dal 1345 ca. al 1375)">(attivo dal 1345 ca. al 1375) (1)</option>
-                    <option value="(attivo dal 1360 al 1390 ca.)">(attivo dal 1360 al 1390 ca.) (1)</option>
-                    <option value="(attivo in Emilia nell'ultimo quarto del XV sec.)">(attivo in Emilia nell'ultimo quarto del XV sec.) (1)</option>
-                    <option value="(attivo in Emilia nel terzo quarto del XV secolo)">(attivo in Emilia nel terzo quarto del XV secolo) (1)</option>
-                    <option value="(attivo in Lombardia verso la metà del XVIII secolo)">(attivo in Lombardia verso la met&agrave; del XVIII secolo) (1)</option>
-                    <option value="(attivo in Romagna nel XIII secolo)">(attivo in Romagna nel XIII secolo) (1)</option>
-                    <option value="(Aussig, 1727-1779)">(Aussig, 1727-1779) (1)</option>
-                    <option value="(Bagnacavallo 1484 (?)-Bologna 1542 (?))">(Bagnacavallo 1484 (?)-Bologna 1542 (?)) (2)</option>
-                    <option value="(Belluno, 1639 - Venezia, 1734)">(Belluno, 1639 - Venezia, 1734) (1)</option>
-                    <option value="(Belluno, 1659 - Venezia, 1734)">(Belluno, 1659 - Venezia, 1734) (1)</option>
-                    <option value="(Beveren-Waes, 1599-Torino, 1663)">(Beveren-Waes, 1599-Torino, 1663) (2)</option>
-                    <option value="(Bologna, 1447 circa - 1517)">(Bologna, 1447 circa - 1517) (1)</option>
-                    <option value="(Bologna, 1447, circa -1517)">(Bologna, 1447, circa -1517) (11)</option>
-                    <option value="(Bologna, 1474/1475 - 1552)">(Bologna, 1474/1475 - 1552) (1)</option>
-                    <option value="(Bologna, 1486 ca.-1557)">(Bologna, 1486 ca.-1557) (1)</option>
-                    <option value="(Bologna, 1486 circa - 1557) (Bologna, 1487 - 1 545)">(Bologna, 1486 circa - 1557) (Bologna, 1487 - 1 545) (1)</option>
-                    <option value="(Bologna, 1522 - Roma, 1614)">(Bologna, 1522 - Roma, 1614) (1)</option>
-                    <option value="(Bologna, 1529-1592)">(Bologna, 1529-1592) (3)</option>
-                    <option value="(Bologna, 1553-1612)">(Bologna, 1553-1612) (1)</option>
-                    <option value="(Bologna, 1555-1619)">(Bologna, 1555-1619) (7)</option>
-                    <option value="(Bologna, 1556-1629)">(Bologna, 1556-1629) (1)</option>
-                    <option value="(Bologna, 1560-Roma, 1609)">(Bologna, 1560-Roma, 1609) (1)</option>
-                    <option value="(Bologna, 1575 - 1642)">(Bologna, 1575 - 1642) (1)</option>
-                    <option value="(Bologna, 1576-Parma, 1622)">(Bologna, 1576-Parma, 1622) (1)</option>
-                    <option value="(Bologna, 1577 - 1668)">(Bologna, 1577 - 1668) (3)</option>
-                    <option value="(Bologna, 1577 - Roma, 1638)">(Bologna, 1577 - Roma, 1638) (1)</option>
-                    <option value="(Bologna, 1578 - 1660)">(Bologna, 1578 - 1660) (1)</option>
-                    <option value="(Bologna, 1582 - 1654)">(Bologna, 1582 - 1654) (1)</option>
-                    <option value="(Bologna, 1583-Roma, 1640 ca.)">(Bologna, 1583-Roma, 1640 ca.) (1)</option>
-                    <option value="(Bologna, 1588-1649)">(Bologna, 1588-1649) (2)</option>
-                    <option value="(Bologna, 1600 ca.-1648)">(Bologna, 1600 ca.-1648) (1)</option>
-                    <option value="(Bologna, 1610 - 1670)">(Bologna, 1610 - 1670) (1)</option>
-                    <option value="(Bologna, 1610 - Roma, 1670)">(Bologna, 1610 - Roma, 1670) (1)</option>
-                    <option value="(Bologna, 1611 ca.-1689)">(Bologna, 1611 ca.-1689) (1)</option>
-                    <option value="(Bologna, 1628-Forl? 1719)">(Bologna, 1628-Forl? 1719) (1)</option>
-                    <option value="(Bologna, 1628-Forlì, 1719)">(Bologna, 1628-Forl&igrave;, 1719) (1)</option>
-                    <option value="(Bologna, 1629 – 1700)">(Bologna, 1629 &ndash; 1700) (1)</option>
-                    <option value="(Bologna, 1629-1700)">(Bologna, 1629-1700) (2)</option>
-                    <option value="(Bologna, 1629-1700) (Bologna, 1680-1753)">(Bologna, 1629-1700) (Bologna, 1680-1753) (1)</option>
-                    <option value="(Bologna, 1638-1665)">(Bologna, 1638-1665) (2)</option>
-                    <option value="(Bologna, 1653-1741)">(Bologna, 1653-1741) (1)</option>
-                    <option value="(Bologna, 1665-1747)">(Bologna, 1665-1747) (1)</option>
-                    <option value="(Bologna, 1680-1725)">(Bologna, 1680-1725) (1)</option>
-                    <option value="(Bologna, 1688-1765)">(Bologna, 1688-1765) (2)</option>
-                    <option value="(Bologna, 1696 - 1756)">(Bologna, 1696 - 1756) (1)</option>
-                    <option value="(Bologna, 1734 - 1781)">(Bologna, 1734 - 1781) (1)</option>
-                    <option value="(Bologna, 1771-1847)">(Bologna, 1771-1847) (1)</option>
-                    <option value="(Bologna, 1792 - 1862)">(Bologna, 1792 - 1862) (1)</option>
-                    <option value="(Bologna, 1797-1841)">(Bologna, 1797-1841) (1)</option>
-                    <option value="(Bologna, attivo 1390-1447)">(Bologna, attivo 1390-1447) (3)</option>
-                    <option value="(Bologna, attivo dal 1380 al 1426)">(Bologna, attivo dal 1380 al 1426) (13)</option>
-                    <option value="(Bologna, doc. 1409-1470)">(Bologna, doc. 1409-1470) (7)</option>
-                    <option value="(Bologna, doc. 1428-1460)">(Bologna, doc. 1428-1460) (2)</option>
-                    <option value="(Bologna, doc. dal 1355 - già morto nel 1399)">(Bologna, doc. dal 1355 - gi&agrave; morto nel 1399) (15)</option>
-                    <option value="(Bologna, doc. dal 1476 - morto nel 1495)">(Bologna, doc. dal 1476 - morto nel 1495) (1)</option>
-                    <option value="(Bologna, documentato dal 1330 - morto ante 1361)">(Bologna, documentato dal 1330 - morto ante 1361) (14)</option>
-                    <option value="(Bologna, documentato dal 1355 – già morto nel 1399)">(Bologna, documentato dal 1355 &ndash; gi&agrave; morto nel 1399) (1)</option>
-                    <option value="(Bologna, documentato dal 1375 al 1398)">(Bologna, documentato dal 1375 al 1398) (1)</option>
-                    <option value="(Bologna, documentato dal 1410 al 1469)">(Bologna, documentato dal 1410 al 1469) (1)</option>
-                    <option value="(Bologna, documentato nel 1333, attivo nella prima metà del XIV secolo)">(Bologna, documentato nel 1333, attivo nella prima met&agrave; del XIV secolo) (3)</option>
-                    <option value="(Bologna, not. 1817 - 1855)">(Bologna, not. 1817 - 1855) (1)</option>
-                    <option value="(Bologna, notizie dal 1456 al 1497)">(Bologna, notizie dal 1456 al 1497) (3)</option>
-                    <option value="(Bologna, operante nella seconda metà del Trecento)">(Bologna, operante nella seconda met&agrave;&nbsp;del Trecento) (1)</option>
-                    <option value="(Bologna, prima metà del XIV secolo)">(Bologna, prima met&agrave; del XIV secolo) (10)</option>
-                    <option value="(Bologna, prima metà del XV secolo)">(Bologna, prima met&agrave; del XV secolo) (1)</option>
-                    <option value="(Bologna, prima metà XIV secolo)">(Bologna, prima met&agrave; XIV secolo) (1)</option>
-                    <option value="(Bologna, prima metà del XIV secolo)">(Bologna, prima met&agrave;&nbsp;del XIV secolo) (2)</option>
-                    <option value="(Bologna 1474/1475 -1552)">(Bologna 1474/1475 -1552) (4)</option>
-                    <option value="(Bologna 1486 ca.-1557)">(Bologna 1486 ca.-1557) (3)</option>
-                    <option value="(Bologna 1487-1545)">(Bologna 1487-1545) (1)</option>
-                    <option value="(Bologna 1512-1597)">(Bologna 1512-1597) (2)</option>
-                    <option value="(Bologna 1521-1601)">(Bologna 1521-1601) (2)</option>
-                    <option value="(Bologna 1529-1592)">(Bologna 1529-1592) (2)</option>
-                    <option value="(Bologna 1530 ca.-1576)">(Bologna 1530 ca.-1576) (1)</option>
-                    <option value="(Bologna 1532-1577)">(Bologna 1532-1577) (2)</option>
-                    <option value="(Bologna 1552-Roma 1614)">(Bologna 1552-Roma 1614) (3)</option>
-                    <option value="(Bologna 1555-1619)">(Bologna 1555-1619) (17)</option>
-                    <option value="(Bologna 1556-1629)">(Bologna 1556-1629) (2)</option>
-                    <option value="(Bologna 1557-Parma 1602)">(Bologna 1557-Parma 1602) (2)</option>
-                    <option value="(Bologna 1560 ca.-Milano 1621)">(Bologna 1560 ca.-Milano 1621) (1)</option>
-                    <option value="(Bologna 1560-Roma 1609)">(Bologna 1560-Roma 1609) (10)</option>
-                    <option value="(Bologna 1562 ca.-1602)">(Bologna 1562 ca.-1602) (2)</option>
-                    <option value="(Bologna 1569-1633)">(Bologna 1569-1633) (1)</option>
-                    <option value="(Bologna 1575-1642)">(Bologna 1575-1642) (15)</option>
-                    <option value="(Bologna 1575-1655)">(Bologna 1575-1655) (3)</option>
-                    <option value="(Bologna 1576-Parma 1622)">(Bologna 1576-Parma 1622) (1)</option>
-                    <option value="(Bologna 1577-1668)">(Bologna 1577-1668) (2)</option>
-                    <option value="(Bologna 1578-1660)">(Bologna 1578-1660) (4)</option>
-                    <option value="(Bologna 1581-Napoli 1641)">(Bologna 1581-Napoli 1641) (6)</option>
-                    <option value="(Bologna 1583-Roma 1640 ca.)">(Bologna 1583-Roma 1640 ca.) (1)</option>
-                    <option value="(Bologna 1588-1649)">(Bologna 1588-1649) (1)</option>
-                    <option value="(Bologna 1610-1670)">(Bologna 1610-1670) (2)</option>
-                    <option value="(Bologna 1620-1684)">(Bologna 1620-1684) (1)</option>
-                    <option value="(Bologna 1628-Forlì 1719)">(Bologna 1628-Forl&igrave; 1719) (1)</option>
-                    <option value="(Bologna 1629-1700)">(Bologna 1629-1700) (7)</option>
-                    <option value="(Bologna 1638-1665)">(Bologna 1638-1665) (2)</option>
-                    <option value="(Bologna 1648-1729)">(Bologna 1648-1729) (4)</option>
-                    <option value="(Bologna 1654-1719)">(Bologna 1654-1719) (1)</option>
-                    <option value="(Bologna 1656-1727)">(Bologna 1656-1727) (3)</option>
-                    <option value="(Bologna 1665-1747)">(Bologna 1665-1747) (11)</option>
-                    <option value="(Bologna 1680-1725)">(Bologna 1680-1725) (2)</option>
-                    <option value="(Bologna 1685-Brescia 1768)">(Bologna 1685-Brescia 1768) (1)</option>
-                    <option value="(Bologna 1692-1776)">(Bologna 1692-1776) (4)</option>
-                    <option value="(Bologna 1699-1771)">(Bologna 1699-1771) (2)</option>
-                    <option value="(Bologna 1708-1779)">(Bologna 1708-1779) (1)</option>
-                    <option value="(Bologna 1737-1807)">(Bologna 1737-1807) (5)</option>
-                    <option value="(Bologna 1764-1834)">(Bologna 1764-1834) (1)</option>
-                    <option value="(Bologna e Pistoia, doc. dal 1377 al 1410)">(Bologna e Pistoia, doc. dal 1377 al 1410) (2)</option>
-                    <option value="(Bologna e Pistoia, documentato dal 1377 al 1410)">(Bologna e Pistoia, documentato dal 1377 al 1410) (1)</option>
-                    <option value="(Brescia 1532-Roma 1592)">(Brescia 1532-Roma 1592) (1)</option>
-                    <option value="(Canale di Serino, 1657-Barra, 1747)">(Canale di Serino, 1657-Barra, 1747) (1)</option>
-                    <option value="(Candia 1541-Toledo 1614)">(Candia 1541-Toledo 1614) (1)</option>
-                    <option value="(Cento, 1591-Bologna, 1666)">(Cento, 1591-Bologna, 1666) (1)</option>
-                    <option value="(Cento, 1633-Bologna, 1715)">(Cento, 1633-Bologna, 1715) (1)</option>
-                    <option value="(Cento, 1637-Bologna, 1688)">(Cento, 1637-Bologna, 1688) (1)</option>
-                    <option value="(Cento 1433-Venezia 1478)">(Cento 1433-Venezia 1478) (1)</option>
-                    <option value="(Cento 1591-Bologna 1666)">(Cento 1591-Bologna 1666) (11)</option>
-                    <option value="(Cento 1633-Bologna 1715 )">(Cento 1633-Bologna 1715 ) (1)</option>
-                    <option value="(Città della Pieve 1445/1450-Fontignano 1523)">(Citt&agrave;&nbsp;della Pieve 1445/1450-Fontignano 1523) (1)</option>
-                    <option value="(Colle di Vespignano 1267-Firenze 1337)">(Colle di Vespignano 1267-Firenze 1337) (1)</option>
-                    <option value="(Como, 1654 ca.-Modena, 1727)">(Como, 1654 ca.-Modena, 1727) (2)</option>
-                    <option value="(Conegliano ca. 1459-ca. 1518)">(Conegliano ca. 1459-ca. 1518) (1)</option>
-                    <option value="(Cotignola ca. 1481-Napoli o Roma 1540 ca.)">(Cotignola ca. 1481-Napoli o Roma 1540 ca.) (4)</option>
-                    <option value="(Cremona, 1671-Bologna, 1749)">(Cremona, 1671-Bologna, 1749) (1)</option>
-                    <option value="(Cremona 1671-Bologna 1749)">(Cremona 1671-Bologna 1749) (5)</option>
-                    <option value="(doc. a Bologna dal 1409 al 1456)">(doc. a Bologna dal 1409 al 1456) (2)</option>
-                    <option value="(documentato a Padova e Bologna del 1441 al 1470)">(documentato a Padova e Bologna del 1441 al 1470) (1)</option>
-                    <option value="(Fabriano, 1385 circa - Roma, 1427)">(Fabriano, 1385 circa - Roma, 1427) (1)</option>
-                    <option value="(Fabriano, 1385 circa ? Roma, 1427)">(Fabriano, 1385 circa ? Roma, 1427) (1)</option>
-                    <option value="(Ferrara, 1436 - Bologna, 1478)">(Ferrara, 1436 - Bologna, 1478) (1)</option>
-                    <option value="(Ferrara, 1480 circa - 1528?)">(Ferrara, 1480 circa - 1528?) (1)</option>
-                    <option value="(Ferrara, 1569-1632)">(Ferrara, 1569-1632) (2)</option>
-                    <option value="(Ferrara 1450 ca.-Bologna 1496)">(Ferrara 1450 ca.-Bologna 1496) (2)</option>
-                    <option value="(Ferrara 1476 ca.-1559)">(Ferrara 1476 ca.-1559) (2)</option>
-                    <option value="(Ferrara 1480 ca.-post 1543)">(Ferrara 1480 ca.-post 1543) (1)</option>
-                    <option value="(Ferrara ca. 1460-Mantova 1535)">(Ferrara ca. 1460-Mantova 1535) (7)</option>
-                    <option value="(Ferrara ca. 1480-1530)">(Ferrara ca. 1480-1530) (1)</option>
-                    <option value="(Ferrara ca. 1487-post 1527)">(Ferrara ca. 1487-post 1527) (1)</option>
-                    <option value="(fine del XIV secolo - inizi del XV secolo)">(fine del XIV secolo - inizi del XV secolo) (1)</option>
-                    <option value="(Firenze, 1412 - 1468)">(Firenze, 1412 - 1468) (2)</option>
-                    <option value="(Firenze, 1655 ? Livorno, 1726)">(Firenze, 1655 ? Livorno, 1726) (1)</option>
-                    <option value="(Firenze, attivo 1370-1425)">(Firenze, attivo 1370-1425) (1)</option>
-                    <option value="(Firenze, seconda metà del XIV secolo)">(Firenze, seconda met&agrave; del XIV secolo) (1)</option>
-                    <option value="(Firenze ?, 1703-Firenze, 1778)">(Firenze ?, 1703-Firenze, 1778) (1)</option>
-                    <option value="(Firenze?, documentato dal 1363 – morto a Padova nel 1391)">(Firenze?, documentato dal 1363 &ndash; morto a Padova nel 1391) (1)</option>
-                    <option value="(Firenze 1475-1554)">(Firenze 1475-1554) (3)</option>
-                    <option value="(Firenze 1482-1525)">(Firenze 1482-1525) (1)</option>
-                    <option value="(Firenze 1494-1557)">(Firenze 1494-1557) (1)</option>
-                    <option value="(Foligno 1430-1502)">(Foligno 1430-1502) (1)</option>
-                    <option value="(Forli, 1460, circa - 1539)">(Forli, 1460, circa - 1539) (1)</option>
-                    <option value="(Genova, 1581-Venezia, 1644)">(Genova, 1581-Venezia, 1644) (2)</option>
-                    <option value="(Genova, 1639 - Roma, 1709)">(Genova, 1639 - Roma, 1709) (1)</option>
-                    <option value="(Genova o Venezia, 1659 - Londra, 1714)">(Genova o Venezia, 1659 - Londra, 1714) (2)</option>
-                    <option value="(Imola 1494 ca.-Bologna 1550 ca.)">(Imola 1494 ca.-Bologna 1550 ca.) (2)</option>
-                    <option value="(Maubege, 1602 - Parma, 1676)">(Maubege, 1602 - Parma, 1676) (1)</option>
-                    <option value="(Maubege 1602-Parma 1676)">(Maubege 1602-Parma 1676) (1)</option>
-                    <option value="(Milano, 1613 ca. - Bologna, 1681)">(Milano, 1613 ca. - Bologna, 1681) (1)</option>
-                    <option value="(Milano, 1613 ca.-Bologna, 1681)">(Milano, 1613 ca.-Bologna, 1681) (1)</option>
-                    <option value="(Milano 1616-Bologna 1681)">(Milano 1616-Bologna 1681) (2)</option>
-                    <option value="(Modena, 1499 ca.-Parigi 1571)">(Modena, 1499 ca.-Parigi 1571) (1)</option>
-                    <option value="(Modena 1499 ca.-Parigi 1571)">(Modena 1499 ca.-Parigi 1571) (8)</option>
-                    <option value="(Moneglia 1527-Madrid 1585)">(Moneglia 1527-Madrid 1585) (1)</option>
-                    <option value="(Murano 1420 ca.-Venezia 1484)">(Murano 1420 ca.-Venezia 1484) (1)</option>
-                    <option value="(Napoli, 1634-1705)">(Napoli, 1634-1705) (1)</option>
-                    <option value="(notizie dal 1343 al 1345)">(notizie dal 1343 al 1345) (1)</option>
-                    <option value="(notizie dal 1360 ca. al 1410)">(notizie dal 1360 ca. al 1410) (6)</option>
-                    <option value="(operoso tra Marche e Umbria nel primo trentennio circa del XV secolo)">(operoso tra Marche e Umbria nel primo trentennio circa del XV secolo) (2)</option>
-                    <option value="(Orchamps-Vennes, 1657-Roma, 1733)">(Orchamps-Vennes, 1657-Roma, 1733) (1)</option>
-                    <option value="(Ostiano, 1582-Roma, 1662)">(Ostiano, 1582-Roma, 1662) (1)</option>
-                    <option value="(Padova, 1584-Venezia tra1663 e 1675)">(Padova, 1584-Venezia tra1663 e 1675) (1)</option>
-                    <option value="(Parma, documentato dal 1489 al 1506)">(Parma, documentato dal 1489 al 1506) (1)</option>
-                    <option value="(Parma 1503-Casalmaggiore 1540)">(Parma 1503-Casalmaggiore 1540) (1)</option>
-                    <option value="(Parma 1582-1647)">(Parma 1582-1647) (1)</option>
-                    <option value="(Perugia, 1606 - Roma, 1681)">(Perugia, 1606 - Roma, 1681) (1)</option>
-                    <option value="(Pesaro 1612-Verona 1648)">(Pesaro 1612-Verona 1648) (5)</option>
-                    <option value="(Pieve di Cadore 1489 - 1490-Venezia 1576)">(Pieve di Cadore 1489 - 1490-Venezia 1576) (1)</option>
-                    <option value="(Pisa, notizie dal 1484 - attivo a Bologna e Ferrara fino al 1538)">(Pisa, notizie dal 1484 - attivo a Bologna e Ferrara fino al 1538) (2)</option>
-                    <option value="(Puria di Valsolda 1527-Milano 1596)">(Puria di Valsolda 1527-Milano 1596) (2)</option>
-                    <option value="(Recanati doc. dal 1433 al 1466)">(Recanati doc. dal 1433 al 1466) (2)</option>
-                    <option value="(Regensburg, 1667 - 1719)">(Regensburg, 1667 - 1719) (2)</option>
-                    <option value="(Reggio Emilia 1605-Padova 1654)">(Reggio Emilia 1605-Padova 1654) (1)</option>
-                    <option value="(Rimini, documentato dal 1398 al 1422)">(Rimini, documentato dal 1398 al 1422) (1)</option>
-                    <option value="(Roma, 1585 - ante 1653)">(Roma, 1585 - ante 1653) (1)</option>
-                    <option value="(Roma, 1593 - Napoli, 1652 ca.)">(Roma, 1593 - Napoli, 1652 ca.) (1)</option>
-                    <option value="(Roma, 1602-1660)">(Roma, 1602-1660) (1)</option>
-                    <option value="(Roma, 1608-post 1673)">(Roma, 1608-post 1673) (1)</option>
-                    <option value="(S.Arcangelo 1601-1681)">(S.Arcangelo 1601-1681) (1)</option>
-                    <option value="(S.Matteo della Decima 1728-Ravenna 1781)">(S.Matteo della Decima 1728-Ravenna 1781) (3)</option>
-                    <option value="(S.Matteo della Decima 1734-Bologna 1802)">(S.Matteo della Decima 1734-Bologna 1802) (4)</option>
-                    <option value="(San Martino d'Albaro, 1616-Genova, 1683)">(San Martino d'Albaro, 1616-Genova, 1683) (1)</option>
-                    <option value="(Sassuolo 1577-Bologna 1660)">(Sassuolo 1577-Bologna 1660) (1)</option>
-                    <option value="(seconda metà del XIV secolo)">(seconda met&agrave; del XIV secolo) (1)</option>
-                    <option value="(Serina 1480 ca.-Venezia 1528)">(Serina 1480 ca.-Venezia 1528) (1)</option>
-                    <option value="(Siena doc. 1389-1428)">(Siena doc. 1389-1428) (1)</option>
-                    <option value="(Siressa, 1495-Anversa, 1570 ca.)">(Siressa, 1495-Anversa, 1570 ca.) (1)</option>
-                    <option value="(Spoleto, seconda metà XIII)">(Spoleto, seconda met&agrave; XIII) (1)</option>
-                    <option value="(Taverna, 1613-La Valletta, 1699)">(Taverna, 1613-La Valletta, 1699) (1)</option>
-                    <option value="(Torino, attivo dal 1488 - Como 1517)">(Torino, attivo dal 1488 - Como 1517) (1)</option>
-                    <option value="(Treviglio, 1609-Milano, 1690)">(Treviglio, 1609-Milano, 1690) (1)</option>
-                    <option value="(Urbino 1483-Roma 1520)">(Urbino 1483-Roma 1520) (2)</option>
-                    <option value="(Venezia, 1510 c.- 1561)">(Venezia, 1510 c.- 1561) (1)</option>
-                    <option value="(Venezia, 1548-1628)">(Venezia, 1548-1628) (1)</option>
-                    <option value="(Venezia, 1666 - 1740)">(Venezia, 1666 - 1740) (1)</option>
-                    <option value="(Venezia, 1668-1725)">(Venezia, 1668-1725) (2)</option>
-                    <option value="(Venezia, 1682-1754)">(Venezia, 1682-1754) (1)</option>
-                    <option value="(Venezia, 15654-Pieve di Soligo, 1726)">(Venezia, 15654-Pieve di Soligo, 1726) (1)</option>
-                    <option value="(Venezia, doc. 1356-1372)">(Venezia, doc. 1356-1372) (2)</option>
-                    <option value="(Venezia, documentato dal 1428)">(Venezia, documentato dal 1428) (1)</option>
-                    <option value="(Venezia, documentato dal 1455 - Imola, Bologna, 1487)">(Venezia, documentato dal 1455 - Imola, Bologna, 1487) (2)</option>
-                    <option value="(Venezia 1519-1594)">(Venezia 1519-1594) (1)</option>
-                    <option value="(Venezia 1583-Roma 1618)">(Venezia 1583-Roma 1618) (1)</option>
-                    <option value="(Venezia 1697-Bologna 1732)">(Venezia 1697-Bologna 1732) (4)</option>
-                    <option value="(Verona, 1528-Venezia, 1588)">(Verona, 1528-Venezia, 1588) (1)</option>
-                    <option value="(Verona, 1601?-1630?)">(Verona, 1601?-1630?) (1)</option>
-                    <option value="(Verona, 1667-Bologna, 1748)">(Verona, 1667-Bologna, 1748) (1)</option>
-                    <option value="(Volciano di Sal?, 1625-Gargnano sul Garda, 1700)">(Volciano di Sal?, 1625-Gargnano sul Garda, 1700) (2)</option>
-                    <option value="Roma, 1684 - 1764">Roma, 1684 - 1764 (1)</option>
-                </select>
-                <div class="input-group-append mb-3">
-                    <label class="input-group-text" for="inputGroupSelect02">Birth/Death date</label>
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect02">Birth/Death date</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="(1741 - 1806)">(1741 - 1806) (1)</option>
+                        <option value="(Anversa, ca. 1540-Bologna, 1619)">(Anversa, ca. 1540-Bologna, 1619) (1)</option>
+                        <option value="(Anversa ca. 1540-Bologna 1619)">(Anversa ca. 1540-Bologna 1619) (1)</option>
+                        <option value="(Arezzo 1511-Firenze 1574)">(Arezzo 1511-Firenze 1574) (2)</option>
+                        <option value="(Arpino, 1567 - Roma, 1640)">(Arpino, 1567 - Roma, 1640) (1)</option>
+                        <option value="(attivo a Bologna nella prima metà del XIV secolo)">(attivo a Bologna nella prima met&agrave; del XIV secolo) (2)</option>
+                        <option value="(attivo a Bologna nella seconda metà del XV secolo)">(attivo a Bologna nella seconda met&agrave; del XV secolo) (1)</option>
+                        <option value="(attivo dal 1345 ca. al 1375)">(attivo dal 1345 ca. al 1375) (1)</option>
+                        <option value="(attivo dal 1360 al 1390 ca.)">(attivo dal 1360 al 1390 ca.) (1)</option>
+                        <option value="(attivo in Emilia nell'ultimo quarto del XV sec.)">(attivo in Emilia nell'ultimo quarto del XV sec.) (1)</option>
+                        <option value="(attivo in Emilia nel terzo quarto del XV secolo)">(attivo in Emilia nel terzo quarto del XV secolo) (1)</option>
+                        <option value="(attivo in Lombardia verso la metà del XVIII secolo)">(attivo in Lombardia verso la met&agrave; del XVIII secolo) (1)</option>
+                        <option value="(attivo in Romagna nel XIII secolo)">(attivo in Romagna nel XIII secolo) (1)</option>
+                        <option value="(Aussig, 1727-1779)">(Aussig, 1727-1779) (1)</option>
+                        <option value="(Bagnacavallo 1484 (?)-Bologna 1542 (?))">(Bagnacavallo 1484 (?)-Bologna 1542 (?)) (2)</option>
+                        <option value="(Belluno, 1639 - Venezia, 1734)">(Belluno, 1639 - Venezia, 1734) (1)</option>
+                        <option value="(Belluno, 1659 - Venezia, 1734)">(Belluno, 1659 - Venezia, 1734) (1)</option>
+                        <option value="(Beveren-Waes, 1599-Torino, 1663)">(Beveren-Waes, 1599-Torino, 1663) (2)</option>
+                        <option value="(Bologna, 1447 circa - 1517)">(Bologna, 1447 circa - 1517) (1)</option>
+                        <option value="(Bologna, 1447, circa -1517)">(Bologna, 1447, circa -1517) (11)</option>
+                        <option value="(Bologna, 1474/1475 - 1552)">(Bologna, 1474/1475 - 1552) (1)</option>
+                        <option value="(Bologna, 1486 ca.-1557)">(Bologna, 1486 ca.-1557) (1)</option>
+                        <option value="(Bologna, 1486 circa - 1557) (Bologna, 1487 - 1 545)">(Bologna, 1486 circa - 1557) (Bologna, 1487 - 1 545) (1)</option>
+                        <option value="(Bologna, 1522 - Roma, 1614)">(Bologna, 1522 - Roma, 1614) (1)</option>
+                        <option value="(Bologna, 1529-1592)">(Bologna, 1529-1592) (3)</option>
+                        <option value="(Bologna, 1553-1612)">(Bologna, 1553-1612) (1)</option>
+                        <option value="(Bologna, 1555-1619)">(Bologna, 1555-1619) (7)</option>
+                        <option value="(Bologna, 1556-1629)">(Bologna, 1556-1629) (1)</option>
+                        <option value="(Bologna, 1560-Roma, 1609)">(Bologna, 1560-Roma, 1609) (1)</option>
+                        <option value="(Bologna, 1575 - 1642)">(Bologna, 1575 - 1642) (1)</option>
+                        <option value="(Bologna, 1576-Parma, 1622)">(Bologna, 1576-Parma, 1622) (1)</option>
+                        <option value="(Bologna, 1577 - 1668)">(Bologna, 1577 - 1668) (3)</option>
+                        <option value="(Bologna, 1577 - Roma, 1638)">(Bologna, 1577 - Roma, 1638) (1)</option>
+                        <option value="(Bologna, 1578 - 1660)">(Bologna, 1578 - 1660) (1)</option>
+                        <option value="(Bologna, 1582 - 1654)">(Bologna, 1582 - 1654) (1)</option>
+                        <option value="(Bologna, 1583-Roma, 1640 ca.)">(Bologna, 1583-Roma, 1640 ca.) (1)</option>
+                        <option value="(Bologna, 1588-1649)">(Bologna, 1588-1649) (2)</option>
+                        <option value="(Bologna, 1600 ca.-1648)">(Bologna, 1600 ca.-1648) (1)</option>
+                        <option value="(Bologna, 1610 - 1670)">(Bologna, 1610 - 1670) (1)</option>
+                        <option value="(Bologna, 1610 - Roma, 1670)">(Bologna, 1610 - Roma, 1670) (1)</option>
+                        <option value="(Bologna, 1611 ca.-1689)">(Bologna, 1611 ca.-1689) (1)</option>
+                        <option value="(Bologna, 1628-Forl? 1719)">(Bologna, 1628-Forl? 1719) (1)</option>
+                        <option value="(Bologna, 1628-Forlì, 1719)">(Bologna, 1628-Forl&igrave;, 1719) (1)</option>
+                        <option value="(Bologna, 1629 – 1700)">(Bologna, 1629 &ndash; 1700) (1)</option>
+                        <option value="(Bologna, 1629-1700)">(Bologna, 1629-1700) (2)</option>
+                        <option value="(Bologna, 1629-1700) (Bologna, 1680-1753)">(Bologna, 1629-1700) (Bologna, 1680-1753) (1)</option>
+                        <option value="(Bologna, 1638-1665)">(Bologna, 1638-1665) (2)</option>
+                        <option value="(Bologna, 1653-1741)">(Bologna, 1653-1741) (1)</option>
+                        <option value="(Bologna, 1665-1747)">(Bologna, 1665-1747) (1)</option>
+                        <option value="(Bologna, 1680-1725)">(Bologna, 1680-1725) (1)</option>
+                        <option value="(Bologna, 1688-1765)">(Bologna, 1688-1765) (2)</option>
+                        <option value="(Bologna, 1696 - 1756)">(Bologna, 1696 - 1756) (1)</option>
+                        <option value="(Bologna, 1734 - 1781)">(Bologna, 1734 - 1781) (1)</option>
+                        <option value="(Bologna, 1771-1847)">(Bologna, 1771-1847) (1)</option>
+                        <option value="(Bologna, 1792 - 1862)">(Bologna, 1792 - 1862) (1)</option>
+                        <option value="(Bologna, 1797-1841)">(Bologna, 1797-1841) (1)</option>
+                        <option value="(Bologna, attivo 1390-1447)">(Bologna, attivo 1390-1447) (3)</option>
+                        <option value="(Bologna, attivo dal 1380 al 1426)">(Bologna, attivo dal 1380 al 1426) (13)</option>
+                        <option value="(Bologna, doc. 1409-1470)">(Bologna, doc. 1409-1470) (7)</option>
+                        <option value="(Bologna, doc. 1428-1460)">(Bologna, doc. 1428-1460) (2)</option>
+                        <option value="(Bologna, doc. dal 1355 - già morto nel 1399)">(Bologna, doc. dal 1355 - gi&agrave; morto nel 1399) (15)</option>
+                        <option value="(Bologna, doc. dal 1476 - morto nel 1495)">(Bologna, doc. dal 1476 - morto nel 1495) (1)</option>
+                        <option value="(Bologna, documentato dal 1330 - morto ante 1361)">(Bologna, documentato dal 1330 - morto ante 1361) (14)</option>
+                        <option value="(Bologna, documentato dal 1355 – già morto nel 1399)">(Bologna, documentato dal 1355 &ndash; gi&agrave; morto nel 1399) (1)</option>
+                        <option value="(Bologna, documentato dal 1375 al 1398)">(Bologna, documentato dal 1375 al 1398) (1)</option>
+                        <option value="(Bologna, documentato dal 1410 al 1469)">(Bologna, documentato dal 1410 al 1469) (1)</option>
+                        <option value="(Bologna, documentato nel 1333, attivo nella prima metà del XIV secolo)">(Bologna, documentato nel 1333, attivo nella prima met&agrave; del XIV secolo) (3)</option>
+                        <option value="(Bologna, not. 1817 - 1855)">(Bologna, not. 1817 - 1855) (1)</option>
+                        <option value="(Bologna, notizie dal 1456 al 1497)">(Bologna, notizie dal 1456 al 1497) (3)</option>
+                        <option value="(Bologna, operante nella seconda metà del Trecento)">(Bologna, operante nella seconda met&agrave;&nbsp;del Trecento) (1)</option>
+                        <option value="(Bologna, prima metà del XIV secolo)">(Bologna, prima met&agrave; del XIV secolo) (10)</option>
+                        <option value="(Bologna, prima metà del XV secolo)">(Bologna, prima met&agrave; del XV secolo) (1)</option>
+                        <option value="(Bologna, prima metà XIV secolo)">(Bologna, prima met&agrave; XIV secolo) (1)</option>
+                        <option value="(Bologna, prima metà del XIV secolo)">(Bologna, prima met&agrave;&nbsp;del XIV secolo) (2)</option>
+                        <option value="(Bologna 1474/1475 -1552)">(Bologna 1474/1475 -1552) (4)</option>
+                        <option value="(Bologna 1486 ca.-1557)">(Bologna 1486 ca.-1557) (3)</option>
+                        <option value="(Bologna 1487-1545)">(Bologna 1487-1545) (1)</option>
+                        <option value="(Bologna 1512-1597)">(Bologna 1512-1597) (2)</option>
+                        <option value="(Bologna 1521-1601)">(Bologna 1521-1601) (2)</option>
+                        <option value="(Bologna 1529-1592)">(Bologna 1529-1592) (2)</option>
+                        <option value="(Bologna 1530 ca.-1576)">(Bologna 1530 ca.-1576) (1)</option>
+                        <option value="(Bologna 1532-1577)">(Bologna 1532-1577) (2)</option>
+                        <option value="(Bologna 1552-Roma 1614)">(Bologna 1552-Roma 1614) (3)</option>
+                        <option value="(Bologna 1555-1619)">(Bologna 1555-1619) (17)</option>
+                        <option value="(Bologna 1556-1629)">(Bologna 1556-1629) (2)</option>
+                        <option value="(Bologna 1557-Parma 1602)">(Bologna 1557-Parma 1602) (2)</option>
+                        <option value="(Bologna 1560 ca.-Milano 1621)">(Bologna 1560 ca.-Milano 1621) (1)</option>
+                        <option value="(Bologna 1560-Roma 1609)">(Bologna 1560-Roma 1609) (10)</option>
+                        <option value="(Bologna 1562 ca.-1602)">(Bologna 1562 ca.-1602) (2)</option>
+                        <option value="(Bologna 1569-1633)">(Bologna 1569-1633) (1)</option>
+                        <option value="(Bologna 1575-1642)">(Bologna 1575-1642) (15)</option>
+                        <option value="(Bologna 1575-1655)">(Bologna 1575-1655) (3)</option>
+                        <option value="(Bologna 1576-Parma 1622)">(Bologna 1576-Parma 1622) (1)</option>
+                        <option value="(Bologna 1577-1668)">(Bologna 1577-1668) (2)</option>
+                        <option value="(Bologna 1578-1660)">(Bologna 1578-1660) (4)</option>
+                        <option value="(Bologna 1581-Napoli 1641)">(Bologna 1581-Napoli 1641) (6)</option>
+                        <option value="(Bologna 1583-Roma 1640 ca.)">(Bologna 1583-Roma 1640 ca.) (1)</option>
+                        <option value="(Bologna 1588-1649)">(Bologna 1588-1649) (1)</option>
+                        <option value="(Bologna 1610-1670)">(Bologna 1610-1670) (2)</option>
+                        <option value="(Bologna 1620-1684)">(Bologna 1620-1684) (1)</option>
+                        <option value="(Bologna 1628-Forlì 1719)">(Bologna 1628-Forl&igrave; 1719) (1)</option>
+                        <option value="(Bologna 1629-1700)">(Bologna 1629-1700) (7)</option>
+                        <option value="(Bologna 1638-1665)">(Bologna 1638-1665) (2)</option>
+                        <option value="(Bologna 1648-1729)">(Bologna 1648-1729) (4)</option>
+                        <option value="(Bologna 1654-1719)">(Bologna 1654-1719) (1)</option>
+                        <option value="(Bologna 1656-1727)">(Bologna 1656-1727) (3)</option>
+                        <option value="(Bologna 1665-1747)">(Bologna 1665-1747) (11)</option>
+                        <option value="(Bologna 1680-1725)">(Bologna 1680-1725) (2)</option>
+                        <option value="(Bologna 1685-Brescia 1768)">(Bologna 1685-Brescia 1768) (1)</option>
+                        <option value="(Bologna 1692-1776)">(Bologna 1692-1776) (4)</option>
+                        <option value="(Bologna 1699-1771)">(Bologna 1699-1771) (2)</option>
+                        <option value="(Bologna 1708-1779)">(Bologna 1708-1779) (1)</option>
+                        <option value="(Bologna 1737-1807)">(Bologna 1737-1807) (5)</option>
+                        <option value="(Bologna 1764-1834)">(Bologna 1764-1834) (1)</option>
+                        <option value="(Bologna e Pistoia, doc. dal 1377 al 1410)">(Bologna e Pistoia, doc. dal 1377 al 1410) (2)</option>
+                        <option value="(Bologna e Pistoia, documentato dal 1377 al 1410)">(Bologna e Pistoia, documentato dal 1377 al 1410) (1)</option>
+                        <option value="(Brescia 1532-Roma 1592)">(Brescia 1532-Roma 1592) (1)</option>
+                        <option value="(Canale di Serino, 1657-Barra, 1747)">(Canale di Serino, 1657-Barra, 1747) (1)</option>
+                        <option value="(Candia 1541-Toledo 1614)">(Candia 1541-Toledo 1614) (1)</option>
+                        <option value="(Cento, 1591-Bologna, 1666)">(Cento, 1591-Bologna, 1666) (1)</option>
+                        <option value="(Cento, 1633-Bologna, 1715)">(Cento, 1633-Bologna, 1715) (1)</option>
+                        <option value="(Cento, 1637-Bologna, 1688)">(Cento, 1637-Bologna, 1688) (1)</option>
+                        <option value="(Cento 1433-Venezia 1478)">(Cento 1433-Venezia 1478) (1)</option>
+                        <option value="(Cento 1591-Bologna 1666)">(Cento 1591-Bologna 1666) (11)</option>
+                        <option value="(Cento 1633-Bologna 1715 )">(Cento 1633-Bologna 1715 ) (1)</option>
+                        <option value="(Città della Pieve 1445/1450-Fontignano 1523)">(Citt&agrave;&nbsp;della Pieve 1445/1450-Fontignano 1523) (1)</option>
+                        <option value="(Colle di Vespignano 1267-Firenze 1337)">(Colle di Vespignano 1267-Firenze 1337) (1)</option>
+                        <option value="(Como, 1654 ca.-Modena, 1727)">(Como, 1654 ca.-Modena, 1727) (2)</option>
+                        <option value="(Conegliano ca. 1459-ca. 1518)">(Conegliano ca. 1459-ca. 1518) (1)</option>
+                        <option value="(Cotignola ca. 1481-Napoli o Roma 1540 ca.)">(Cotignola ca. 1481-Napoli o Roma 1540 ca.) (4)</option>
+                        <option value="(Cremona, 1671-Bologna, 1749)">(Cremona, 1671-Bologna, 1749) (1)</option>
+                        <option value="(Cremona 1671-Bologna 1749)">(Cremona 1671-Bologna 1749) (5)</option>
+                        <option value="(doc. a Bologna dal 1409 al 1456)">(doc. a Bologna dal 1409 al 1456) (2)</option>
+                        <option value="(documentato a Padova e Bologna del 1441 al 1470)">(documentato a Padova e Bologna del 1441 al 1470) (1)</option>
+                        <option value="(Fabriano, 1385 circa - Roma, 1427)">(Fabriano, 1385 circa - Roma, 1427) (1)</option>
+                        <option value="(Fabriano, 1385 circa ? Roma, 1427)">(Fabriano, 1385 circa ? Roma, 1427) (1)</option>
+                        <option value="(Ferrara, 1436 - Bologna, 1478)">(Ferrara, 1436 - Bologna, 1478) (1)</option>
+                        <option value="(Ferrara, 1480 circa - 1528?)">(Ferrara, 1480 circa - 1528?) (1)</option>
+                        <option value="(Ferrara, 1569-1632)">(Ferrara, 1569-1632) (2)</option>
+                        <option value="(Ferrara 1450 ca.-Bologna 1496)">(Ferrara 1450 ca.-Bologna 1496) (2)</option>
+                        <option value="(Ferrara 1476 ca.-1559)">(Ferrara 1476 ca.-1559) (2)</option>
+                        <option value="(Ferrara 1480 ca.-post 1543)">(Ferrara 1480 ca.-post 1543) (1)</option>
+                        <option value="(Ferrara ca. 1460-Mantova 1535)">(Ferrara ca. 1460-Mantova 1535) (7)</option>
+                        <option value="(Ferrara ca. 1480-1530)">(Ferrara ca. 1480-1530) (1)</option>
+                        <option value="(Ferrara ca. 1487-post 1527)">(Ferrara ca. 1487-post 1527) (1)</option>
+                        <option value="(fine del XIV secolo - inizi del XV secolo)">(fine del XIV secolo - inizi del XV secolo) (1)</option>
+                        <option value="(Firenze, 1412 - 1468)">(Firenze, 1412 - 1468) (2)</option>
+                        <option value="(Firenze, 1655 ? Livorno, 1726)">(Firenze, 1655 ? Livorno, 1726) (1)</option>
+                        <option value="(Firenze, attivo 1370-1425)">(Firenze, attivo 1370-1425) (1)</option>
+                        <option value="(Firenze, seconda metà del XIV secolo)">(Firenze, seconda met&agrave; del XIV secolo) (1)</option>
+                        <option value="(Firenze ?, 1703-Firenze, 1778)">(Firenze ?, 1703-Firenze, 1778) (1)</option>
+                        <option value="(Firenze?, documentato dal 1363 – morto a Padova nel 1391)">(Firenze?, documentato dal 1363 &ndash; morto a Padova nel 1391) (1)</option>
+                        <option value="(Firenze 1475-1554)">(Firenze 1475-1554) (3)</option>
+                        <option value="(Firenze 1482-1525)">(Firenze 1482-1525) (1)</option>
+                        <option value="(Firenze 1494-1557)">(Firenze 1494-1557) (1)</option>
+                        <option value="(Foligno 1430-1502)">(Foligno 1430-1502) (1)</option>
+                        <option value="(Forli, 1460, circa - 1539)">(Forli, 1460, circa - 1539) (1)</option>
+                        <option value="(Genova, 1581-Venezia, 1644)">(Genova, 1581-Venezia, 1644) (2)</option>
+                        <option value="(Genova, 1639 - Roma, 1709)">(Genova, 1639 - Roma, 1709) (1)</option>
+                        <option value="(Genova o Venezia, 1659 - Londra, 1714)">(Genova o Venezia, 1659 - Londra, 1714) (2)</option>
+                        <option value="(Imola 1494 ca.-Bologna 1550 ca.)">(Imola 1494 ca.-Bologna 1550 ca.) (2)</option>
+                        <option value="(Maubege, 1602 - Parma, 1676)">(Maubege, 1602 - Parma, 1676) (1)</option>
+                        <option value="(Maubege 1602-Parma 1676)">(Maubege 1602-Parma 1676) (1)</option>
+                        <option value="(Milano, 1613 ca. - Bologna, 1681)">(Milano, 1613 ca. - Bologna, 1681) (1)</option>
+                        <option value="(Milano, 1613 ca.-Bologna, 1681)">(Milano, 1613 ca.-Bologna, 1681) (1)</option>
+                        <option value="(Milano 1616-Bologna 1681)">(Milano 1616-Bologna 1681) (2)</option>
+                        <option value="(Modena, 1499 ca.-Parigi 1571)">(Modena, 1499 ca.-Parigi 1571) (1)</option>
+                        <option value="(Modena 1499 ca.-Parigi 1571)">(Modena 1499 ca.-Parigi 1571) (8)</option>
+                        <option value="(Moneglia 1527-Madrid 1585)">(Moneglia 1527-Madrid 1585) (1)</option>
+                        <option value="(Murano 1420 ca.-Venezia 1484)">(Murano 1420 ca.-Venezia 1484) (1)</option>
+                        <option value="(Napoli, 1634-1705)">(Napoli, 1634-1705) (1)</option>
+                        <option value="(notizie dal 1343 al 1345)">(notizie dal 1343 al 1345) (1)</option>
+                        <option value="(notizie dal 1360 ca. al 1410)">(notizie dal 1360 ca. al 1410) (6)</option>
+                        <option value="(operoso tra Marche e Umbria nel primo trentennio circa del XV secolo)">(operoso tra Marche e Umbria nel primo trentennio circa del XV secolo) (2)</option>
+                        <option value="(Orchamps-Vennes, 1657-Roma, 1733)">(Orchamps-Vennes, 1657-Roma, 1733) (1)</option>
+                        <option value="(Ostiano, 1582-Roma, 1662)">(Ostiano, 1582-Roma, 1662) (1)</option>
+                        <option value="(Padova, 1584-Venezia tra1663 e 1675)">(Padova, 1584-Venezia tra1663 e 1675) (1)</option>
+                        <option value="(Parma, documentato dal 1489 al 1506)">(Parma, documentato dal 1489 al 1506) (1)</option>
+                        <option value="(Parma 1503-Casalmaggiore 1540)">(Parma 1503-Casalmaggiore 1540) (1)</option>
+                        <option value="(Parma 1582-1647)">(Parma 1582-1647) (1)</option>
+                        <option value="(Perugia, 1606 - Roma, 1681)">(Perugia, 1606 - Roma, 1681) (1)</option>
+                        <option value="(Pesaro 1612-Verona 1648)">(Pesaro 1612-Verona 1648) (5)</option>
+                        <option value="(Pieve di Cadore 1489 - 1490-Venezia 1576)">(Pieve di Cadore 1489 - 1490-Venezia 1576) (1)</option>
+                        <option value="(Pisa, notizie dal 1484 - attivo a Bologna e Ferrara fino al 1538)">(Pisa, notizie dal 1484 - attivo a Bologna e Ferrara fino al 1538) (2)</option>
+                        <option value="(Puria di Valsolda 1527-Milano 1596)">(Puria di Valsolda 1527-Milano 1596) (2)</option>
+                        <option value="(Recanati doc. dal 1433 al 1466)">(Recanati doc. dal 1433 al 1466) (2)</option>
+                        <option value="(Regensburg, 1667 - 1719)">(Regensburg, 1667 - 1719) (2)</option>
+                        <option value="(Reggio Emilia 1605-Padova 1654)">(Reggio Emilia 1605-Padova 1654) (1)</option>
+                        <option value="(Rimini, documentato dal 1398 al 1422)">(Rimini, documentato dal 1398 al 1422) (1)</option>
+                        <option value="(Roma, 1585 - ante 1653)">(Roma, 1585 - ante 1653) (1)</option>
+                        <option value="(Roma, 1593 - Napoli, 1652 ca.)">(Roma, 1593 - Napoli, 1652 ca.) (1)</option>
+                        <option value="(Roma, 1602-1660)">(Roma, 1602-1660) (1)</option>
+                        <option value="(Roma, 1608-post 1673)">(Roma, 1608-post 1673) (1)</option>
+                        <option value="(S.Arcangelo 1601-1681)">(S.Arcangelo 1601-1681) (1)</option>
+                        <option value="(S.Matteo della Decima 1728-Ravenna 1781)">(S.Matteo della Decima 1728-Ravenna 1781) (3)</option>
+                        <option value="(S.Matteo della Decima 1734-Bologna 1802)">(S.Matteo della Decima 1734-Bologna 1802) (4)</option>
+                        <option value="(San Martino d'Albaro, 1616-Genova, 1683)">(San Martino d'Albaro, 1616-Genova, 1683) (1)</option>
+                        <option value="(Sassuolo 1577-Bologna 1660)">(Sassuolo 1577-Bologna 1660) (1)</option>
+                        <option value="(seconda metà del XIV secolo)">(seconda met&agrave; del XIV secolo) (1)</option>
+                        <option value="(Serina 1480 ca.-Venezia 1528)">(Serina 1480 ca.-Venezia 1528) (1)</option>
+                        <option value="(Siena doc. 1389-1428)">(Siena doc. 1389-1428) (1)</option>
+                        <option value="(Siressa, 1495-Anversa, 1570 ca.)">(Siressa, 1495-Anversa, 1570 ca.) (1)</option>
+                        <option value="(Spoleto, seconda metà XIII)">(Spoleto, seconda met&agrave; XIII) (1)</option>
+                        <option value="(Taverna, 1613-La Valletta, 1699)">(Taverna, 1613-La Valletta, 1699) (1)</option>
+                        <option value="(Torino, attivo dal 1488 - Como 1517)">(Torino, attivo dal 1488 - Como 1517) (1)</option>
+                        <option value="(Treviglio, 1609-Milano, 1690)">(Treviglio, 1609-Milano, 1690) (1)</option>
+                        <option value="(Urbino 1483-Roma 1520)">(Urbino 1483-Roma 1520) (2)</option>
+                        <option value="(Venezia, 1510 c.- 1561)">(Venezia, 1510 c.- 1561) (1)</option>
+                        <option value="(Venezia, 1548-1628)">(Venezia, 1548-1628) (1)</option>
+                        <option value="(Venezia, 1666 - 1740)">(Venezia, 1666 - 1740) (1)</option>
+                        <option value="(Venezia, 1668-1725)">(Venezia, 1668-1725) (2)</option>
+                        <option value="(Venezia, 1682-1754)">(Venezia, 1682-1754) (1)</option>
+                        <option value="(Venezia, 15654-Pieve di Soligo, 1726)">(Venezia, 15654-Pieve di Soligo, 1726) (1)</option>
+                        <option value="(Venezia, doc. 1356-1372)">(Venezia, doc. 1356-1372) (2)</option>
+                        <option value="(Venezia, documentato dal 1428)">(Venezia, documentato dal 1428) (1)</option>
+                        <option value="(Venezia, documentato dal 1455 - Imola, Bologna, 1487)">(Venezia, documentato dal 1455 - Imola, Bologna, 1487) (2)</option>
+                        <option value="(Venezia 1519-1594)">(Venezia 1519-1594) (1)</option>
+                        <option value="(Venezia 1583-Roma 1618)">(Venezia 1583-Roma 1618) (1)</option>
+                        <option value="(Venezia 1697-Bologna 1732)">(Venezia 1697-Bologna 1732) (4)</option>
+                        <option value="(Verona, 1528-Venezia, 1588)">(Verona, 1528-Venezia, 1588) (1)</option>
+                        <option value="(Verona, 1601?-1630?)">(Verona, 1601?-1630?) (1)</option>
+                        <option value="(Verona, 1667-Bologna, 1748)">(Verona, 1667-Bologna, 1748) (1)</option>
+                        <option value="(Volciano di Sal?, 1625-Gargnano sul Garda, 1700)">(Volciano di Sal?, 1625-Gargnano sul Garda, 1700) (2)</option>
+                        <option value="Roma, 1684 - 1764">Roma, 1684 - 1764 (1)</option>
+                    </select>
+                 </div>           
+
+                <div class="input-group">
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="input-group-append mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Creation date</label>
+                    </div>
                 </div>
 
                 <div class="input-group">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Creation date</label>
-                </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                </div>
-                </div>
-
-                <div class="input-group">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Provenance</label>
-                </div>
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect02">Provenance</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
             </form>
         
