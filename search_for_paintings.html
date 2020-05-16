@@ -16,6 +16,9 @@
         #advanced-form {
             display: none;
         }
+        .bootstrap-tagsinput {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +54,10 @@
                 <h2 class="mb-4"><strong>Filters</strong></h2>
 
                 <div class="input-group mb-3">
-                    <input type="text" data-role="tagsinput" value="lute, organ, violin">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" for="tags">Tags</span>
+                    </div>
+                    <input type="text" id="tags" data-role="tagsinput" value="lute, organ, violin">
                 </div>
 
                 <div class="input-group mb-3">
