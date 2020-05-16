@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <title>Browsing page</title>
     <style type="text/css">
         .jumbotron {
@@ -15,20 +16,35 @@
         #advanced-form {
             display: none;
         }
+
+        #header {
+            font-family:'Nanum Myeongjo', serif;
+        }
+
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-transparent bg-warning fixed-top"> <!-- br-transparent -->
+      <a class="navbar-brand text-white">The vision shape</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-white text-white" my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
     <div class="jumbotron">
-      <h1 class="display-4"><strong>Multimedia database</strong></h1>
-      <p class="lead"><strong>Extract unstructured data from paintings in order to conduct artistic, historical, sociological and iconological researches on the civilization to which they belong.</strong></p>
+    <br><br>
+     <div id="header">
+      <h1 class=display-3 style="text-align:center;"><strong>THE VISION SHAPE</strong></h1>
+      <p class="lead" style="text-align:center;"><strong>What if you could look at exactly what you are looking for?</strong></p>
+  </div>
     </div>
         <div class="container">
           <div class="row">
             <div class="col-sm-3">
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Image</a></li>
+                  <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="#" class="text-warning">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-warning">Image</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Lute</li>
                   </ol>
                 </nav>
@@ -36,17 +52,18 @@
             <div class="col-sm-9">
             <div class="card-deck">
               <div class="card">
-                <img src="img4.jpg" class="card-img-top" alt="..." style="width:70%;">
+                <a href="#"><img src="img1.jpg" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title"><i>Pala Bargellini</i>, Lodovico Carracci</h5>
+                  <p class="card-text">La pala con la Madonna, il Bambino e i santi Francesco, Domenico, Maddalena è la prima opera firmata e datata di Ludovico Carracci, che ... 
+                    </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">research score: 1</small>
                 </div>
               </div>
               <div class="card">
-                <img src="img2.jpg" class="card-img-top" alt="...">
+                <img src="img1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -56,7 +73,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="img3.jpg" class="card-img-top" alt="...">
+                <img src="img1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
