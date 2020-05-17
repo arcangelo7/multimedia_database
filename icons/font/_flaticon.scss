@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 16/05/2020 18:18
+    Creation date: 17/05/2020 21:13
     */
 
     @font-face {
@@ -38,5 +38,7 @@
     }
 
     .flaticon-visibility:before { content: "\f100"; }
+.flaticon-arrowsoutline:before { content: "\f101"; }
     
     $font-Flaticon-visibility: "\f100";
+    $font-Flaticon-arrowsoutline: "\f101";
