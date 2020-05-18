@@ -9,7 +9,8 @@
     <title>VSM</title>
     <style>
         .flex_container {
-            display: flex;            
+            display: flex;
+            justify-content: space-between;            
         }
         #tf_idf, #list_of_sources {
             margin: 1em;
@@ -49,6 +50,14 @@
         .tooltip:hover .tooltiptext {
             visibility: visible;
         }
+        input[type="text"] {
+            margin-right: 2em;
+        }
+        .search_row {
+            transition: background 2s linear;
+            -webkit-transition: background 2s linear;
+            -moz-transition: background 2s linear;            
+        }
     </style>
 </head>
 <body>
@@ -58,6 +67,12 @@
                 <div id="toc_container">
                     <h2 class="toc_title">Vector Space Model</h2>
                 </div>
+
+                <div class="flex_container">
+                    <input type="text">
+                    <a href="#" class="button" id="search">Search</a>
+                </div>
+
                 <div class="flex_container">
                     <table class="alt" id="tf_idf">
                         <thead>            
@@ -92,7 +107,7 @@
                             </tr>        
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="search_row">
                                 <th>
                                     <p>water</p>
                                 </th>
@@ -125,7 +140,7 @@
                                     <p>0</p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="search_row">
                                 <th>
                                     <p>wave</p>
                                 </th>
@@ -222,7 +237,7 @@
                                     <p>0</p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="search_row">
                                 <th>
                                     <p>ship</p>
                                 </th>
@@ -492,7 +507,6 @@
 
 <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -504,11 +518,11 @@
 <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
-  <script>
-    $( function() {
-        $( document ).tooltip();
-    } );
-  </script>
+<script>
+    $("#search").click(function(){
+        $(".search_row").css("background-color", "purple")
+    })
+</script>
 
 </body>
 </html>
