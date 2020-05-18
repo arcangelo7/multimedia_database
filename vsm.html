@@ -26,6 +26,29 @@
         .close_link:hover {
             color:darkred;
         }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted white; /* If you want dots under the hoverable text */
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 8em;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -4em; /* Use half of the width (120/2 = 60), to center the tooltip */
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
     </style>
 </head>
 <body>
@@ -74,7 +97,9 @@
                                     <p>water</p>
                                 </th>
                                 <td>
-                                    <p>0,6</p>
+                                    <div class="tooltip">0.6
+                                        <span class="tooltiptext">1 * log(8/2)</span>
+                                    </div>                                
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -86,7 +111,9 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>0,6</p>
+                                    <div class="tooltip">0.6
+                                        <span class="tooltiptext">1 * log(8/2)</span>
+                                    </div>                                   
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -112,7 +139,9 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>3,01</p>
+                                    <div class="tooltip">3.01
+                                        <span class="tooltiptext">5 * log(8/2)</span>
+                                    </div>                                   
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -121,7 +150,9 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>13,2</p>
+                                    <div class="tooltip">13.2
+                                        <span class="tooltiptext">22 * log(8/2)</span>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -138,7 +169,9 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>2,70</p>
+                                    <div class="tooltip">2.7
+                                        <span class="tooltiptext">3 * log(8/1)</span>
+                                    </div>                                
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -164,10 +197,14 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>0,60</p>
+                                    <div class="tooltip">0.6
+                                        <span class="tooltiptext">1 * log(8/2)</span>
+                                    </div>                                  
                                 </td>
                                 <td>
-                                    <p>0,60</p>
+                                    <div class="tooltip">0.6
+                                        <span class="tooltiptext">1 * log(8/2)</span>
+                                    </div>                                   
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -199,10 +236,14 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>3,61</p>
+                                    <div class="tooltip">3.61
+                                        <span class="tooltiptext">6 * log(8/2)</span>
+                                    </div>                                   
                                 </td>
                                 <td>
-                                    <p>1,80</p>
+                                    <div class="tooltip">1.8
+                                        <span class="tooltiptext">3 * log(8/2)</span>
+                                    </div>                                  
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -222,7 +263,9 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>0,60</p>
+                                    <div class="tooltip">0.6
+                                        <span class="tooltiptext">1 * log(8/2)</span>
+                                    </div>                                   
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -231,7 +274,9 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>2,40</p>
+                                    <div class="tooltip">2.4
+                                        <span class="tooltiptext">4 * log(8/2) </span>
+                                    </div>                                 
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -266,7 +311,9 @@
                                     <p>0</p>
                                 </td>
                                 <td>
-                                    <p>0,90</p>
+                                    <div class="tooltip">0.9
+                                        <span class="tooltiptext">1 * log(8/1)</span>
+                                    </div>                                 
                                 </td>
                                 <td>
                                     <p>0</p>
@@ -444,7 +491,8 @@
     </div>
 
 <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -455,6 +503,12 @@
 
 <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script>
+    $( function() {
+        $( document ).tooltip();
+    } );
+  </script>
 
 </body>
 </html>
