@@ -75,6 +75,10 @@
             flex:1;
             margin: 2em;
         }
+        .flex_container_back>div {
+            flex:1;
+            margin: 2em;
+        }
         #posting_list{
             display: flex;
             flex-direction: column;
@@ -94,289 +98,292 @@
                     <h2 class="toc_title">Vector Space Model</h2>
                 </div>
 
-                <div id="search" class="flex_container">
-                    <input type="text">
-                    <a href="#" class="button">Search</a>
-                </div>
-
                 <div id="card">
-                    <div class="flex_container front">
-                        <table class="alt" id="tf_idf">
-                            <thead>            
-                                <tr>
-                                    <th>
-                                        <p>&nbsp;</p>
-                                    </th>
-                                    <th>
-                                        <p>1</p>
-                                    </th>
-                                    <th>
-                                        <p>2</p>
-                                    </th>
-                                    <th>
-                                        <p>3</p>
-                                    </th>
-                                    <th>
-                                        <p>4</p>
-                                    </th>
-                                    <th>
-                                        <p>5</p>
-                                    </th>
-                                    <th>
-                                        <p>6</p>
-                                    </th>
-                                    <th>
-                                        <p>7</p>
-                                    </th>
-                                    <th>
-                                        <p>8</p>
-                                    </th>
-                                </tr>        
-                            </thead>
-                            <tbody>
-                                <tr class="search_row">
-                                    <th>
-                                        <p>water</p>
-                                    </th>
-                                    <td>
-                                        <div class="tooltip">0.6
-                                            <span class="tooltiptext">1 * log(8/2)</span>
-                                        </div>                                
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">0.6
-                                            <span class="tooltiptext">1 * log(8/2)</span>
-                                        </div>                                   
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                                <tr class="search_row">
-                                    <th>
-                                        <p>wave</p>
-                                    </th>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">3.01
-                                            <span class="tooltiptext">5 * log(8/2)</span>
-                                        </div>                                   
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">13.2
-                                            <span class="tooltiptext">22 * log(8/2)</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <p>baby</p>
-                                    </th>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">2.7
-                                            <span class="tooltiptext">3 * log(8/1)</span>
-                                        </div>                                
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <p>god</p>
-                                    </th>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">0.6
-                                            <span class="tooltiptext">1 * log(8/2)</span>
-                                        </div>                                  
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">0.6
-                                            <span class="tooltiptext">1 * log(8/2)</span>
-                                        </div>                                   
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                                <tr class="search_row">
-                                    <th>
-                                        <p>ship</p>
-                                    </th>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">3.61
-                                            <span class="tooltiptext">6 * log(8/2)</span>
-                                        </div>                                   
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">1.8
-                                            <span class="tooltiptext">3 * log(8/2)</span>
-                                        </div>                                  
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <p>woman</p>
-                                    </th>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">0.6
-                                            <span class="tooltiptext">1 * log(8/2)</span>
-                                        </div>                                   
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">2.4
-                                            <span class="tooltiptext">4 * log(8/2) </span>
-                                        </div>                                 
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <p>nature</p>
-                                    </th>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <div class="tooltip">0.9
-                                            <span class="tooltiptext">1 * log(8/1)</span>
-                                        </div>                                 
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="front">
+                        <div id="search" class="flex_container">
+                            <input type="text">
+                            <a href="#" class="button" id="search_button">Search</a>
+                        </div>
+                        <div class="flex_container">
 
-                        <div id="list_of_sources">
-                            <ol>
-                                <li><a href="#leonardo_modal" rel="modal:open">Virgin of the Rocks, Leonardo da Vinci</a></li>
-                                <li><a href="#botticelli_modal" rel="modal:open">The Birth of Venus, Sandro Botticelli</a></li>
-                                <li><a href="#giorgione_modal" rel="modal:open">The Tempest, Giorgione</a></li>
-                                <li><a href="#gericault_modal" rel="modal:open">The Raft of the Medusa, Théodore Géricault</a></li>
-                                <li><a href="#friedrich_modal" rel="modal:open">Woman at Window, Caspar David Friedrich</a></li>
-                                <li><a href="#turner_modal" rel="modal:open">Norham Castle, Sunrise, William Turner</a></li>
-                                <li><a href="#hokusai_modal" rel="modal:open">The Great Wave off Kanagawa, Katsushika Hokusai</a></li>
-                                <li><a href="#cezanne_modal" rel="modal:open">The Bathers, Paul Cézanne</a></li>
-                            </ol>
+                            <table class="alt" id="tf_idf">
+                                <thead>            
+                                    <tr>
+                                        <th>
+                                            <p>&nbsp;</p>
+                                        </th>
+                                        <th>
+                                            <p>1</p>
+                                        </th>
+                                        <th>
+                                            <p>2</p>
+                                        </th>
+                                        <th>
+                                            <p>3</p>
+                                        </th>
+                                        <th>
+                                            <p>4</p>
+                                        </th>
+                                        <th>
+                                            <p>5</p>
+                                        </th>
+                                        <th>
+                                            <p>6</p>
+                                        </th>
+                                        <th>
+                                            <p>7</p>
+                                        </th>
+                                        <th>
+                                            <p>8</p>
+                                        </th>
+                                    </tr>        
+                                </thead>
+                                <tbody>
+                                    <tr class="search_row">
+                                        <th>
+                                            <p>water</p>
+                                        </th>
+                                        <td>
+                                            <div class="tooltip">0.6
+                                                <span class="tooltiptext">1 * log(8/2)</span>
+                                            </div>                                
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">0.6
+                                                <span class="tooltiptext">1 * log(8/2)</span>
+                                            </div>                                   
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="search_row">
+                                        <th>
+                                            <p>wave</p>
+                                        </th>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">3.01
+                                                <span class="tooltiptext">5 * log(8/2)</span>
+                                            </div>                                   
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">13.2
+                                                <span class="tooltiptext">22 * log(8/2)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <p>baby</p>
+                                        </th>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">2.7
+                                                <span class="tooltiptext">3 * log(8/1)</span>
+                                            </div>                                
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <p>god</p>
+                                        </th>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">0.6
+                                                <span class="tooltiptext">1 * log(8/2)</span>
+                                            </div>                                  
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">0.6
+                                                <span class="tooltiptext">1 * log(8/2)</span>
+                                            </div>                                   
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="search_row">
+                                        <th>
+                                            <p>ship</p>
+                                        </th>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">3.61
+                                                <span class="tooltiptext">6 * log(8/2)</span>
+                                            </div>                                   
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">1.8
+                                                <span class="tooltiptext">3 * log(8/2)</span>
+                                            </div>                                  
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <p>woman</p>
+                                        </th>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">0.6
+                                                <span class="tooltiptext">1 * log(8/2)</span>
+                                            </div>                                   
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">2.4
+                                                <span class="tooltiptext">4 * log(8/2) </span>
+                                            </div>                                 
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <p>nature</p>
+                                        </th>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <div class="tooltip">0.9
+                                                <span class="tooltiptext">1 * log(8/1)</span>
+                                            </div>                                 
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div id="list_of_sources">
+                                <ol>
+                                    <li><a href="#leonardo_modal" rel="modal:open">Virgin of the Rocks, Leonardo da Vinci</a></li>
+                                    <li><a href="#botticelli_modal" rel="modal:open">The Birth of Venus, Sandro Botticelli</a></li>
+                                    <li><a href="#giorgione_modal" rel="modal:open">The Tempest, Giorgione</a></li>
+                                    <li><a href="#gericault_modal" rel="modal:open">The Raft of the Medusa, Théodore Géricault</a></li>
+                                    <li><a href="#friedrich_modal" rel="modal:open">Woman at Window, Caspar David Friedrich</a></li>
+                                    <li><a href="#turner_modal" rel="modal:open">Norham Castle, Sunrise, William Turner</a></li>
+                                    <li><a href="#hokusai_modal" rel="modal:open">The Great Wave off Kanagawa, Katsushika Hokusai</a></li>
+                                    <li><a href="#cezanne_modal" rel="modal:open">The Bathers, Paul Cézanne</a></li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
+
                     <div class="back">
                         <div class="flex_container_back">
                             <table class="alt">
@@ -409,6 +416,7 @@
                                         <tr>
                                             <th>Doc#</th>
                                             <th>W<sub>i,j</sub></th>
+                                            <th>Water</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -427,6 +435,7 @@
                                         <tr>
                                             <th>Doc#</th>
                                             <th>W<sub>i,j</sub></th>
+                                            <th>Wave</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -445,6 +454,7 @@
                                         <tr>
                                             <th>Doc#</th>
                                             <th>W<sub>i,j</sub></th>
+                                            <th>Ship</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -523,7 +533,17 @@
                                 </table>
                             </div>
                         </div>
+
+                        <h3>Answer to the query</h3>
+                        <ol>
+                            <li>The Great Wave off Kanagawa, Katsushika Hokusai</li>
+                            <li>The Raft of the Medusa, Théodore Géricault</li>
+                            <li>Woman at Window, Caspar David Friedrich</li>
+                            <li>Virgin of the Rocks, Leonardo da Vinci</li>
+                        </ol>
                     </div>
+
+
                 </div>  
 
                 <!-- The Modals -->
@@ -698,7 +718,7 @@
     $("#card").flip({
         trigger: 'manual'
     });    
-    $("#search").click(function(){
+    $("#search_button").click(function(){
         $(".search_row").css("background-color", "purple")
         setTimeout(function(){
             $("#card").flip(true, {reverse: true, speed: 5000000000});
@@ -706,6 +726,11 @@
             $(".front").css("visibility", "hidden")
         }, 3000);
     })
+
+    console.log(window.scrollY + document.querySelector('#water_to').getBoundingClientRect().top)
+    console.log(window.scrollY + document.querySelector('#water_to').getBoundingClientRect().left)
+
+
 </script>
 
 </body>
